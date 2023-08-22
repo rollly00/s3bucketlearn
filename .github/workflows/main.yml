@@ -33,6 +33,9 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
           aws-secret-access-key: ${{ secrets.AWS_KEY }} 
           aws-region: ${{ env.AWS_REGION_NAME }}
+          role-duration-seconds: 1200
+          role-session-name: Assumerole
+
 
           
       - name: Copy package to S3 Bucket
